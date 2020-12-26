@@ -1,4 +1,4 @@
-from alpine
+from armv7l/alpine
 
 # UPDATE_URL is the URL that dynamically sets your new IP - Get from here: http://freedns.afraid.org/dynamic/
 # UPDATE_INTERVAL is the frequency at which to check/update in seconds
