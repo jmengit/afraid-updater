@@ -1,4 +1,4 @@
-# afraid-updater
+# docker-afraid-updater
 
 Fork of sover2 docker-afraid-dyn-updater" making it compatible with raspberry pi
 
