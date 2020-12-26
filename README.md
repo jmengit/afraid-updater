@@ -1,4 +1,6 @@
-# docker-afraid-dyn-updater
+# afraid-updater
+
+Fork of sover2 docker-afraid-dyn-updater" making it compatible with raspberry pi
 
 Super simple container to update your [afraid.org](https://freedns.afraid.org/dynamic/) freedns names
 
