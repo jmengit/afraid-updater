@@ -1,17 +1,17 @@
 # docker-afraid-updater
 
-Fork of sover2 docker-afraid-dyn-updater" making it compatible with raspberry pi
+Fork of sover2 "docker-afraid-dyn-updater" making it compatible with raspberry pi 3 processor (arm32v7) .
 
 Super simple container to update your [afraid.org](https://freedns.afraid.org/dynamic/) freedns names
 
 
 - `UPDATE_URL` is the URL that dynamically sets your new IP - Get from here: http://freedns.afraid.org/dynamic/
-- `UPDATE_INTERVAL` is the frequency at which to check/update 1800 is probably reasonable
+- `UPDATE_INTERVAL` is the frequency at which to check/update - 1800 is probably reasonable
 
 ### Simple Build and Run:
 ```
-docker build -t url-test https://raw.githubusercontent.com/sover02/docker-afraid-dyn-updater/master/Dockerfile
-docker run -dit --restart always -e UPDATE_URL="http://freedns.afraid.org/dynamic/update.php?< AFRAID API KEY >" -e UPDATE_INTERVAL="300" dynamic-updater
+docker build -t url-test https://raw.githubusercontent.com/jmengit/docker-afraid-updater/master/Dockerfile
+docker run -dit --restart always -e UPDATE_URL="http://freedns.afraid.org/dynamic/update.php?< AFRAID API KEY >" -e UPDATE_INTERVAL="1800" dynamic-updater
 ```
 
 ### Simple Logging
