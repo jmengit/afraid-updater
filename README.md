@@ -27,3 +27,17 @@ Fri Jan  4 03:21:00 UTC 2019 ERROR: Address 78.124.2.61 has not changed.
 Fri Jan  4 03:21:03 UTC 2019 ERROR: Address 78.124.2.61 has not changed.
 ^C
 ```
+
+### Dcoker-Compose YAML Example
+```
+version: "3.8"
+services:
+  afraid-updater:
+    image: jmendock/afraid-updater
+    container_name: afraid-updater
+    restart: unless-stopped
+    environment:
+      UPDATE_URL: http://freedns.afraid.org/dynamic/update.php?UCJ93vSATE6icRUH0cmK2Otm4sAk2UlpbUXgD8e=
+      UPDATE_INTERVAL: 1800
+```      
+
