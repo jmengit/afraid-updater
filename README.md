@@ -11,7 +11,7 @@ Super simple container to update your [afraid.org](https://freedns.afraid.org/dy
 ### Simple Build and Run:
 ```
 docker build -t url-test https://raw.githubusercontent.com/jmengit/docker-afraid-updater/master/Dockerfile
-docker run -dit --restart always -e UPDATE_URL="http://freedns.afraid.org/dynamic/update.php?< AFRAID API KEY >" -e UPDATE_INTERVAL="1800" dynamic-updater
+docker run -dit --restart always -e UPDATE_URL="http://freedns.afraid.org/dynamic/update.php?< AFRAID API KEY >" -e UPDATE_INTERVAL="1800" url-test
 ```
 
 ### Simple Logging
@@ -28,7 +28,7 @@ Fri Jan  4 03:21:03 UTC 2019 ERROR: Address 78.124.2.61 has not changed.
 ^C
 ```
 
-### Dcoker-Compose YAML Example
+### Docker-Compose YAML Example
 ```
 version: "3.8"
 services:
